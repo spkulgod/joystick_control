@@ -17,7 +17,7 @@
 #include <sensor_msgs/Imu.h>
 
 /**
- * @brief global variable initialization
+     * @brief global variable initialization
  * 
  */
 mavros_msgs::State current_state;
