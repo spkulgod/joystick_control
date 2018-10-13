@@ -17,7 +17,7 @@
 #include <sensor_msgs/Imu.h>
 
 /**
-     * @brief global variable initialization
+ * @brief global variable initialization
  * 
  */
 mavros_msgs::State current_state;
@@ -156,6 +156,7 @@ int main(int argc, char **argv)
                 last_request = ros::Time::now();
             }
         }
+
         /*calculatio to find out the orientation angle*/
         ang = find_ang(imu.orientation);
         cur_yaw.data = cur_yaw.data-90;
